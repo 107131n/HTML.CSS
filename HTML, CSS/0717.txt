@@ -1,0 +1,216 @@
+0717
+
+<a> 태그의 target 속성
+링크된 문서를 클릭했을 때 문서가 열릴 위치를 명시
+
+
+
+폼 태그
+텍스트 필드, 라디오 버튼, 체크 박스, 전송 버튼 등이 위치
+사용자가 브라우저에 입력한 정보를 submit 버튼을 누르면 지정한 url로 정보 전송
+<form method = "get" action = "corfirm.php"></form>
+
+폼 태그 속성
+폼은 사용자로부터 입력한 데이터를 처리해야 하기 때문에 기본적으로 통신 방식을 설정하고, 처리하는 루틴을 읽어와야 함
+
+method
+통신 방법
+get 방식과 post방식
+아이디-패스워드 post방식 사용
+
+action
+입력된 정보를 처리하는 프로그램의 경로
+
+
+
+입력(input) 태그
+타입 속성값에 따라 여러 가지 형태로 출력 가능
+input 태그로 만들어진 텍스트박스를 element라고 함
+
+입력 태그 속성
+text
+password
+checkbox checked 속성을 사용하면 기본값이 됨 / name이 다 다름
+radio checked 속성을 사용하면 기본값이 됨 / name이 같음
+submit 서버로 전송 요청 버튼 / form 태그 필요
+reset
+imagevalue 버튼의 외관이 이미지
+
+select박스 option 속성으로 선택 가능
+
+textarea 여러 줄의 문자열을 입력할 수 있는 양식
+
+
+text 필드
+type
+size, maxlength, value
+
+
+
+
+
+
+CSS 
+스타일 시트
+
+-내부 스타일 시트
+-문장 안에서 스타일 시트
+-외부 스타일 시트
+
+
+csstest.html(구버전)
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS test</title>
+    
+    <style type="text/css">
+        body {
+	       font:10pt;
+               color: rgb(22, 10, 85);
+		}
+    </style>
+</head>
+-> (내부 스타일 시트) 
+분리 안 하면 현재 문서에서만 사용 가능
+
+
+객체지향
+디자인패턴
+-중복 제거
+-얕게 알기(클래스 간 의존성 없애기)
+
+
+csstest.html
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS test</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <s1>
+        <font>너는 별을 보자며 내 손을 끌어서</font><p></p>
+        <font>저녁 노을이 진 옥상에 걸터앉아</font><p></p>
+        <font>Every time I look up in the sky yeah</font><p></p>
+        <font>근데 단 한 개도 없는 star yeah</font><p></p>
+        <font>괜찮아 네가 내 우주고 밝게 빛나 줘 yeah</font><p></p>
+    </s1>
+
+</body>
+
+
+style.css
+
+s1{
+    font:10pt;
+    color: rgb(80, 73, 117);
+}
+-> (외부스타일시트)를 주로 사용
+분리함으로 재사용성이 좋아짐
+보안 상 유리
+
+
+
+태그 선택자
+꾸며줄 대상을 선택한 후 {} 사이에 CSS 문법에 맞춘 속성 등을 작성
+대상 요소를 각각 구분해서 선택해야 함
+
+클래스 선택자 
+부분 선택 시 클래스 선택자를 써서 태그 구분
+
+아이디 선택자
+특정한 부분 선택 시 아이디 선택자를 써서 태그 구분
+
+아이디 ⊂ 클래스 ⊂ 태그
+(아이디가 적용 1순위 
+
+
+선택자, 속성, 속성값
+
+태그 선택자
+태그 요소를 사용한 선택자
+
+클래스 선택자 ★★★
+특정 문단에만 스타일이 적용되도록
+클래스 이름 앞에 .을 붙여서 표현
+클래스 선택자를 사용하여 스타일 적용 시 <태그 class="클래스명">
+
+      <p class="c1">사과</p>
+    <p class="c3">청사과</p>
+    <p class="c2">홍옥</p>
+
+
+.c1{
+    color:lightcoral;
+    font-size: 20pt;
+}
+
+.c2{
+    color:dodgerblue;
+    font-size: 20pt;
+}
+
+.c3{
+    color:darkseagreen;
+    font-size: 20pt;
+}
+
+
+아이디 선택자 ★★★
+하나의 요소에만 적용
+아이디 앞에 #을 붙여서 표현
+
+    <p id="apple">부사</p>
+
+#apple{
+    color:tomato;
+    font-size: 30pt;
+}
+
+
+
+
+
+C언어
+
+프로그래밍의 개요
+
+프로그래밍
+
+개발의 3단계 과정
+-설계
+-원시코드 작성
+-컴파일
+-링크
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
