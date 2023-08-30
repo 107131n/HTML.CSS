@@ -1,0 +1,30 @@
+p{
+    font:10pt;
+    color: rgb(255, 0, 251);
+}
+
+
+.c1{
+    color:lightcoral;
+    font-size: 20pt;
+}
+
+.c2{
+    color:dodgerblue;
+    font-size: 20pt;
+}
+
+.c3{
+    color:darkseagreen;
+    font-size: 20pt;
+}
+
+
+#apple{
+    color:tomato;
+    font-size: 30pt;
+}
+
+div{
+    background-image: url(rock.jpeg);
+}
